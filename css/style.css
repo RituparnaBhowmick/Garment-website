@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/* navbar start */
+.icon{
+    height: 60px;
+    width: 60px;
+}
+.nav-link{
+    color: black !important;
+    font-size: 1rem !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: white !important;
+    background-color: black;
+}
+.navbar-brand{
+    margin-top: 10px !important;
+    font-size: 1.24rem !important; 
+    font-weight: 800;
+    color: black;
+    text-shadow: 0 0 4px rgb(252, 160, 189);
+    text-decoration: none;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: rgb(37, 36, 36);
+    font-size: 25px;
+    font-weight: 400;
+}
+.nav-icon i:hover{
+    color: rgb(252, 30, 104);
+} 
+/* navbar end */
+/* banner start */
+section{
+    padding: 5% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://the-ethos.co/wp-content/uploads/2021/06/best-sustainable-fashion-brands-ethos.jpg);
+    background-position: center;
+    /* display: grid;
+    align-items: center; */
+    display: flex;
+    background-position: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    justify-content: center;
+    background-size: cover;
+}
+
+.main-text h4{
+    color: #ed0569;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color: black;
+    font-size: 66px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: rgb(81, 3, 22);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+}
+.main-btn:hover{
+    background-color: rgb(10, 10, 9);
+    color: aliceblue;
+}
+/* banner end */
+
+/* new arrival start */
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #080808;
+}
+.heading span{
+    padding: 0.2rem 1.2rem;
+    background-color:  rgb(228, 33, 75);
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.btn1{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 6px 20px;
+    transition: all .42s ease;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.btn1 i{
+    vertical-align: middle;
+}
+/* .btn2{
+    display: inline-block;
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid rgb(11, 1, 1);
+    padding: 6px 20px;
+    transition: all .42s ease;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: rgb(225, 225, 60);
+}
+.btn2:hover{
+    background-color: rgb(230, 78, 96);
+    color: white;
+} */
+.new-arrival{
+    margin-top: 2.5rem;
+}
+.new-arrival .box{
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+}
+.new-arrival .box img{
+    background: rgb(211, 233, 238);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new-arrival .box .content{
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.new-arrival .box:hover .content{
+    top:0;
+    transition: 0.2s;
+}
+/* new arrival end */
+
+/* trendy section */
+.trending-product{
+    margin-top: -40px;
+    background-color: rgb(236, 236, 234);
+}
+.center-text h2{
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.center-text span{
+    color: rgb(244, 33, 68);
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 2rem;
+}
+.row{
+    position: relative;
+}
+.row img{
+    width: 100%;
+    height: 400px;   
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text{
+    position:absolute;
+    top: 15px;
+    left: 13px;
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.heart-icon{
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: rgb(247, 7, 47);
+}
+.rating i{
+    color: rgb(253, 180, 46);
+    font-size: 18px;
+}
+.price h4{
+    color: rgb(16, 15, 15);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* top picks */
+.top-picks{
+    margin-top: -60px !important;
+}
+.center-text1 h2{
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.center-text1 span{
+    color: rgb(244, 39, 73);
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.products1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+    gap: 2rem;
+}
+.row1{
+    position: relative;
+}
+.row1 img{
+    width: 100%;
+    height: 200px;   
+}
+
+.heart-icon1{
+    font-size: 20px;
+}
+.heart-icon1:hover{
+    color: rgb(247, 7, 47);
+}
+.rating1 i{
+    color: rgb(253, 180, 46);
+    font-size: 18px;
+}
+.price1 h4{
+    color: rgb(16, 15, 15);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price1 p{
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+}
+/* for her */
+.for-her{
+    margin-top: -60px !important;
+    background-color: #FFF1F1;
+}
+.center-text2 h2{
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.center-text2 span{
+    color: rgb(244, 39, 73);
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.products2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+}
+.row2{
+    position: relative;
+}
+.row2 img{
+    width: 90%;
+    height: 300px;   
+}
+.row2 img:hover{
+    transform: scale(0.9);
+}
+.heart-icon2{
+    font-size: 20px;
+}
+.heart-icon2:hover{
+    color: rgb(247, 7, 47);
+}
+.rating2 i{
+    color: rgb(253, 180, 46);
+    font-size: 18px;
+}
+.price2 h4{
+    color: rgb(16, 15, 15);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price2 p{
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+}
+/* for him */
+.for-him{
+    margin-top: -60px !important;
+    background-color: rgb(222, 236, 241);
+}
+.center-text3 h2{
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.center-text3 span{
+    color: rgb(244, 39, 73);
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.products3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+}
+.row3{
+    position: relative;
+}
+.row3 img{
+    width: 90%;
+    height: 300px;   
+}
+.row3 img:hover{
+    transform: scale(0.9);
+}
+.heart-icon3{
+    font-size: 20px;
+}
+.heart-icon3:hover{
+    color: rgb(247, 7, 47);
+}
+.rating3 i{
+    color: rgb(253, 180, 46);
+    font-size: 18px;
+}
+.price3 h4{
+    color: rgb(16, 15, 15);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price3 p{
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+}
+/* trends for kids */
+.for-kids{
+    margin-top: -60px !important;
+    background-color: rgb(242, 240, 237);
+}
+.center-text4 h2{
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.center-text4 span{
+    color: rgb(244, 39, 73);
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.products4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+}
+.row4{
+    position: relative;
+}
+.row4 img{
+    width: 90%;
+    height: 300px;   
+}
+.row4 img:hover{
+    transform: scale(0.9);
+}
+.heart-icon4{
+    font-size: 20px;
+}
+.heart-icon4:hover{
+    color: rgb(247, 7, 47);
+}
+.rating4 i{
+    color: rgb(253, 180, 46);
+    font-size: 18px;
+}
+.price4 h4{
+    color: rgb(16, 15, 15);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price4 p{
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* client reviews portion */
+.client-reviews{
+    background-color: rgb(206, 204, 202);
+}
+.reviews{
+    text-align: center;
+}
+.reviews h3{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+.reviews p{
+    color: rgb(66, 84, 40);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.reviews h2{
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+/* brand section start */
+.brands__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+  
+.brand__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.brand__image img {
+    max-width: 120px;
+}
+  
+.brand__image:hover {
+    opacity: 1;
+}
+/* footer section */
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background-color:  rgb(249, 240, 240);
+    padding-left: 4rem;
+  }
+  
+  .footer__heading {
+    color: rgb(236, 41, 100);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .footer__heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background-color: gray;
+  }
+  
+  .footer__col p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .footer__col p:hover {
+    color: #628395;
+  }
+  
+  .footer__col p i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .footer__bar {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(16, 15, 15);
+  }
+  
+  .footer__form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .footer__form form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer__form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 0.8rem;
+  }
+  
+  .footer__form .btn {
+    font-weight: 600;
+    background-color: white;
+    color: black;
+  }
+/* footer section end  */
+
+@media (width < 1000px){
+    .brands__container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
+
+@media (width < 900px){
+    .brands__container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+      .footer__bar {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      .copyright {
+        text-align: center;
+      }
+    
+      .footer__form {
+        justify-content: center;
+      }
+    
+ }
+@media (width < 600px){
+    .brands__container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+      .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+ }
